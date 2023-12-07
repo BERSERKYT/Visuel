@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
             type: 'bar',
             height: 350,
             fontFamily: 'figtree', // Change this to your desired font family
-            fontSize: '10px' // Change this to your desired font size
         },
         plotOptions: {
             bar: {
@@ -22,7 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
             },
         },
         dataLabels: {
-            enabled: false
+            enabled: false,
+            style: {
+                fontSize: '5px' // Change this to your desired font size
+            }
         },
         stroke: {
             show: true,
@@ -31,6 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         xaxis: {
             categories: ['Marketing & sales', 'IT', 'Finance', 'Research & development', 'Add Text', 'Add Text', 'Add Text', 'Add Text', 'Add Text'],
+            labels: {
+                style: {
+                    fontSize: '10px' // Change this to your desired font size
+                }
+            }
         },
         yaxis: {
             title: {
@@ -112,7 +119,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 "Month9",
                 "Month10 ",
             ],
-            prices: [500, 560, 610, 590, 600,500, 560, 610, 590, 600]
+            prices: [500, 560, 610, 590, 600,500, 560, 610, 590, 600],
+            xaxis: {
+                type: 'text',
+                labels: {
+                    style: {
+                        fontSize: '8px' // Change this to your desired font size
+                    }
+                }
+            },
         }
     };
 
@@ -145,6 +160,11 @@ document.addEventListener('DOMContentLoaded', function () {
         labels: series.monthDataSeries1.dates,
         xaxis: {
             type: 'text',
+            labels: {
+                style: {
+                    fontSize: '8px' // Change this to your desired font size
+                }
+            }
         },
         yaxis: {
             opposite: true

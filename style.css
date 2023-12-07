@@ -212,3 +212,16 @@ h3 {
     justify-content: center;
     align-items: flex-end;
 }
+/* Add this to your existing CSS */
+.apexcharts-yaxis-label,
+.apexcharts-xaxis-labels text,
+.apexcharts-data-labels text,
+.apexcharts-legend-text {
+    font-size: 10px !important; /* Adjust the font size as needed */
+}
+
+/* If needed, you can also adjust the font size for the title and subtitle */
+.apexcharts-title-text,
+.apexcharts-subtitle-text {
+    font-size: 12px !important; /* Adjust the font size as needed */
+}
